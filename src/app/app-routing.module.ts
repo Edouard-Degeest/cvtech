@@ -6,6 +6,7 @@ import { SearchComponent } from './search/search.component';
 import { AdminComponent } from './admin/admin.component'; 
 
 const routes: Routes = [
+  {path: '', component: LoginFormComponent},
   {path: 'profil', component: ProfilComponent},
   {path: 'search', component: SearchComponent},
   {path: 'login', component: LoginFormComponent},
