@@ -1,0 +1,50 @@
+<h1 mat-dialog-title>Ajouter des formations</h1>
+<div mat-dialog-content>
+
+  <h3>intitulé du poste *</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Ex : chef des vents au détail</mat-label>
+    <input matInput placeholder="">
+ 
+  </mat-form-field>
+
+  <h3>Type d'emploi</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Ajouter un type d'emploi</mat-label>
+    <input matInput placeholder="-">
+
+  </mat-form-field>
+  <h3>Entreprise</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Ex :Microsoft</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+
+  <h3>Lieu</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Ex : Paris, France</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Année</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+
+  <h3>Date de fin</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Mois</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Année</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Enregistrer</button>
+</div>

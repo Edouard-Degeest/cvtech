@@ -1,0 +1,50 @@
+<h1 mat-dialog-title>Modifier mes expériences</h1>
+<div mat-dialog-content>
+
+  <h3>Ecoles</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>ajouter une école</mat-label>
+    <input matInput placeholder="">
+ 
+  </mat-form-field>
+
+  <h3>Diplôme</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>ajouter diplôme</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+  <h3>Domaine d'études</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>ajouter un domaine</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+
+  <h3>Date de début</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Mois</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Année</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+
+  <h3>Date de fin</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Mois</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Année</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Enregistrer</button>
+</div>

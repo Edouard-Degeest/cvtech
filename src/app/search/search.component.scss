@@ -1,0 +1,226 @@
+.form-control {
+  border: 2px solid black;
+  background-color: white;
+  position: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  flex-direction: column;
+  margin-left: 120px;
+  border-radius: 5px;
+}
+.container {
+  display:flex;
+}
+._1 {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 60%;
+  background-color: white;
+  position: center;
+  margin-top: 5%;
+  height: 300px;
+}
+
+#primary{
+  margin-left: 58%;
+text-align: center;
+  bottom: 2px;
+  background-color: white;
+  width: 130px;
+  
+
+}
+mat-panel-title {
+  color: black;
+}
+
+mat-panel-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.drop {
+  cursor: pointer;
+  display: block;
+  border: 2px solid black;
+  background-color: white;
+  position: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.drop + input{
+ display: none; /* hide the checkboxes */
+ border: 1px solid white;
+ width: 60%;
+ background-color: white;
+ position: center;
+ margin-top: 5%;
+ margin-left: auto;
+ margin-right: auto;
+ height: 300px;
+}
+
+.drop + input + div{
+  display:none;
+  width: 60%;
+  background-color: white;
+  position: center;
+  margin-left: auto;
+  margin-right: auto;
+  height:1000px;
+}
+
+.drop + input:checked + div{
+  display:block;
+}
+#menuToggle
+{
+  float: right;
+  display: block;
+  position: relative;
+  top: -28px;
+  left: 22px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #000000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 330px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+}

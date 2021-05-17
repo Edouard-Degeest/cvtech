@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>Modifier mon profil</h1>
+<div mat-dialog-content>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Prénom</mat-label>
+    <input matInput placeholder="">
+ 
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Nom</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Fonction</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Ville</mat-label>
+    <input matInput placeholder="">
+ 
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Pays</mat-label>
+    <input matInput placeholder="">
+  
+  </mat-form-field>
+
+  <form-field-error-example></form-field-error-example>
+  <form-field-custom-control-example></form-field-custom-control-example>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Enregistrer</button>
+</div>

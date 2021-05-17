@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Se connecter</mat-card-title>
+<mat-card-content>
+<form (submit)="loginUser($event)">
+  <p>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Username" formControlName="username" id="username">
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field>
+      <input type="password" matInput placeholder="Password" formControlName="password" id="password">
+    </mat-form-field>
+  </p>
+
+  <div class="button">
+    <button type="submit" value="Submit" mat-button style="background-color: #0099FF; color:white">Login</button>
+  </div>
+
+</form>
+</mat-card-content>
+</mat-card>

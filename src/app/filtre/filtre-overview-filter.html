@@ -1,0 +1,101 @@
+<h2 mat-dialog-title>Tout les filtres</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="lieux">
+  <h3>Lieux</h3>
+  <section class="example-section">
+  <mat-checkbox class="example-margin">Auvergne Rhône-Aple, France</mat-checkbox>
+  <mat-checkbox class="example-margin">Lyon et Périphérie</mat-checkbox>
+  <mat-checkbox class="example-margin">Paris</mat-checkbox>
+  <mat-checkbox class="example-margin">Paris et Périphérie</mat-checkbox>
+  <mat-checkbox class="example-margin">Ile-de-France</mat-checkbox>
+</section>
+<button class="btn-3" mat-icon-button><mat-icon>control_point</mat-icon>Ajouter un lieux</button>
+</div>
+<hr>
+<div class="lieux">
+  <h3>Secteur</h3>
+  <section class="example-section">
+  <mat-checkbox class="example-margin">Logiciels informatiques</mat-checkbox>
+  <mat-checkbox class="example-margin">Design graphique</mat-checkbox>
+  <mat-checkbox class="example-margin">Design</mat-checkbox>
+  <mat-checkbox class="example-margin">Internet</mat-checkbox>
+  <mat-checkbox class="example-margin">Technologique et service de l'information</mat-checkbox>
+</section>
+<button class="btn-3" mat-icon-button><mat-icon>control_point</mat-icon>Ajouter un secteur</button>
+</div>
+<hr>
+<div class="lieux">
+  <h3>Langues du profil</h3>
+  <section class="example-section">
+    <mat-checkbox class="example-margin">Anglais</mat-checkbox>
+    <mat-checkbox class="example-margin">Français</mat-checkbox>
+    <mat-checkbox class="example-margin">Espagnol</mat-checkbox>
+    <mat-checkbox class="example-margin">Portugais</mat-checkbox>
+    <mat-checkbox class="example-margin">Autres</mat-checkbox>
+  </section>
+</div>
+<hr>
+  <div class="lieux">
+  <h3>Laguages informatiques</h3>
+  <section class="example-section">
+  <mat-checkbox class="example-margin">HTML</mat-checkbox>
+  <mat-checkbox class="example-margin">CSS</mat-checkbox>
+  <mat-checkbox class="example-margin">PHP</mat-checkbox>
+  <mat-checkbox class="example-margin">Angular</mat-checkbox>
+  <mat-checkbox class="example-margin">Javascript</mat-checkbox>
+  <mat-checkbox class="example-margin">C++</mat-checkbox>
+</section>
+  </div>
+  <hr>
+  <div class="lieux">
+    <h3>Grade</h3>
+    <section class="example-section">
+    <mat-checkbox class="example-margin">Junior</mat-checkbox>
+    <mat-checkbox class="example-margin">Sénior</mat-checkbox>
+  </section>
+    </div>
+    <hr>
+<div class="lieux">
+  <h3>Disponibilité</h3>
+  <section class="example-section">
+    <mat-checkbox class="example-margin">Disponible🟢</mat-checkbox>
+    <mat-checkbox class="example-margin">Indisponible🔴</mat-checkbox>
+    <date-range-picker-comparison-example></date-range-picker-comparison-example>🟠
+  </section>
+  </div>
+  <hr>
+  <div class="lieux">
+  <h3>Catégorie de services</h3>
+  <section class="example-section">
+    <mat-checkbox class="example-margin">Design</mat-checkbox>
+    <mat-checkbox class="example-margin">Développement de logiciels</mat-checkbox>
+    <mat-checkbox class="example-margin">Design graphique</mat-checkbox>
+    <mat-checkbox class="example-margin">Marketing</mat-checkbox>
+    <button class="btn-3" mat-icon-button><mat-icon>control_point</mat-icon>Ajouter un service</button>
+  </section>
+  </div>
+  <hr>
+  <div class="lieux">
+  <h3>Mot-clés</h3>
+  <div class="keyword">
+  <mat-form-field appearance="outline">
+    <mat-label>Prénom</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Nom</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Poste</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Réinitialiser</button>
+  <button class="btn-apply" mat-button [mat-dialog-close]="true" cdkFocusInitial>Appliquer</button>
+</mat-dialog-actions>

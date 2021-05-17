@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>Dernière expériences</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="outline">
+    <mat-label>Modifier mes infos</mat-label>
+    <input matInput placeholder="">
+ 
+  </mat-form-field>
+
+  <h3>Formation</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Année :</mat-label>
+    <input matInput placeholder="Ajouter information">
+    
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Lieux :</mat-label>
+    <input matInput placeholder="Ajouter un lieu">
+    
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Information</mat-label>
+    <input matInput placeholder="Ajouter information">
+    
+  </mat-form-field>
+
+
+  <h3>Langues</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Langues</mat-label>
+    <input matInput placeholder="Ajouter une langue">
+
+  </mat-form-field>
+
+  <h3>Compétences</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Compétences</mat-label>
+    <input matInput placeholder="Ajouter des compétences">
+  </mat-form-field>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Enregistrer</button>
+</div>

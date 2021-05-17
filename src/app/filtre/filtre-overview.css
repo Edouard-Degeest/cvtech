@@ -1,0 +1,49 @@
+.mat-dialog-container {
+    height: 500px;
+}
+.mat-button {
+    background-color: white;
+    border: 1px solid black ;
+    margin-left: 10px;
+}
+.btn-apply {
+    background-color: #0099FF;
+    border-radius: 99em;
+    color: #fff;
+}
+.lieux {
+    background-color: aliceblue;
+    border-radius: 5px;
+    border:1px solid black;
+}
+
+.example-section {
+   margin: 20px;
+   display: inline-block;
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+  }
+  ::ng-deep .mat-checkbox-ripple .mat-ripple-element {
+    background-color: #057642 !important;
+  }
+  
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #057642 !important;
+  }
+  
+  ::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #057642 !important;
+  }
+  hr {
+      border: 1px solid rgba(128, 128, 128, 0.253);
+  }
+  h3 {
+      font-weight: bold;
+      margin-left: 15px;
+  }
+  .keyword {
+    display: flex;
+    justify-content: space-between;
+  }

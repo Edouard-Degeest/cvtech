@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>Compléter mon profil</h1>
+<div mat-dialog-content>
+
+  <h3>Compétences</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Compétences</mat-label>
+    <input matInput placeholder="">
+ 
+  </mat-form-field>
+  <h3>Expérience</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Expérience</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+  <h3>Formation</h3>
+  <mat-form-field appearance="outline">
+    <mat-label>Formation</mat-label>
+    <input matInput placeholder="">
+
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Enregistrer</button>
+</div>
