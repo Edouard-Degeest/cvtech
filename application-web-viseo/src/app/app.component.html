@@ -1,0 +1,24 @@
+<div class="body">
+    <img src="/assets/img/logo.png">
+    <div class="deco">
+    <p *ngIf="_authService.loggedIn()" ></p>
+    <button *ngIf="_authService.loggedIn()" (click)="_authService.logoutUser()" class="btn-deco" mat-mini-fab color="white"><mat-icon>power_settings_new</mat-icon></button>
+    </div>
+    <div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a  *ngIf="!_authService.loggedIn()" routerLink="/login"><li>Se connecter</li></a>
+            <a *ngIf="!_authService.loggedIn()" routerLink="/register"><li>inscription</li></a>
+            <a *ngIf="_authService.loggedIn()" routerLink="/profil"><li>Profil</li></a>
+            <a *ngIf="_authService.loggedIn()" routerLink="/search"><li>Rechercher</li></a>
+            <a *ngIf="_authService.loggedIn()" (click)="_authService.logoutUser()" ><li>Déconnexion</li></a>
+          </ul>
+        </div>
+</div>
+
+
+<router-outlet></router-outlet>
