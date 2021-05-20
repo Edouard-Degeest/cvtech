@@ -4,7 +4,8 @@
 .mat-button {
     background-color: white;
     border: 1px solid black ;
-    margin-left: 10px;
+    margin-left: 120px;
+    margin-bottom: 20px;
 }
 .btn-apply {
     background-color: #0099FF;

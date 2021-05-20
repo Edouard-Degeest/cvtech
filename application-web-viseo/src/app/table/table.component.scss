@@ -7,3 +7,16 @@ table {
     height: 25px;
     border-radius: 25px;
   }
+.mat-form-field {
+  border: 2px solid black;
+  background-color: white;
+  position: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  flex-direction: column;
+  margin-left: 120px;
+  border-radius: 5px;
+}
+

@@ -34,7 +34,6 @@ import {AuthService} from './auth.service';
 import { AuthGuard } from './auth.guard';
 
 
-
 @NgModule({
   imports:      [ HttpClientModule,FormsModule,NgApexchartsModule ,MatNativeDateModule, MatCheckboxModule, BrowserModule, ReactiveFormsModule, MaterialModule, BrowserAnimationsModule, AppRoutingModule],
   declarations: [  RegisterComponent,SpinnerComponent, ChartPie, AddCv, AddCvDialog, ModifyCv, ModifyCvDialog, ModifyFormation, ModifyFormationDialog, ModifyExperience, ModifyExperienceDialog, AddFormation, AddFormationDialog, AddExperience, AddExperienceDialog, CompleteProfileDialog, CompleteProfile,  DateRangePickerComparisonExample,FiltreOverview, FiltreOverviewFiltrer, FormFieldCustomControlExample, MyTelInput, FormFieldErrorExample, DialogOverviewExampleDialog, DialogOverviewExample,  AppComponent, HeaderComponent, routingComponents, SearchComponent, TableBasicExample, LoginComponent, AdminComponent,],

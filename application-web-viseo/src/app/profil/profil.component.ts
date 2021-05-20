@@ -18,3 +18,8 @@ export class ProfilComponent implements OnInit {
 
 }
 
+export interface Profile {
+  _id: string;
+  name:string;
+  imagePath:string;
+}
